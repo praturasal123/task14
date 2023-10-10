@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9f50c50a18.js" crossorigin="anonymous"></script>
+    <title>Temperature Converter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #67e6dc;
+        }
+
+        .container {
+            background-color: #CBD18F;
+            border: 4px solid red;
+            border-radius: 10px;
+            width: 50%;
+            height: 70%;
+            text-align: center;
+        }
+
+        .container .heading {
+            height: 30%;
+            border-bottom: 4px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        .container .inputs {
+            height: 60%;
+            /* border: 4px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container .inputs input {
+            margin: 10px 0;
+            font-size: 30px;
+            width: 80%;
+            padding: 15px;
+            outline: none;
+            border: 3px solid brown;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            Temperature Converter
+        </div>
+        <div class="inputs">
+            <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
+            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
